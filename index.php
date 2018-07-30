@@ -3,3 +3,7 @@
 define('APP_PATH', __DIR__.'/');
 // 开启调试模式
 define('APP_DEBUG', true);
+
+
+//加载框架
+require './vender/Src.php';
