@@ -9,10 +9,6 @@ class Sql{
 
     protected $hander;
 
-    public function __construct(){
-
-    }
-
     public function connect($host,$user,$pass,$dbname){
         try{
             $dsn = sprintf("mysql:host=%s;dbname=%s;charset=utf8", $host, $dbname);

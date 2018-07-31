@@ -24,5 +24,24 @@ class View{
     //渲染
     public function render(){
         extract($this->variables);
+
+        $defaultHeader = RESOURCES_PATH . '/views/header.php';
+        $defaultFooter = RESOURCES_PATH . '/views/footer.php';
+        $controllerHeader = RESOURCES_PATH . '/views/' . $this->_controller . '/header.php';
+        $controllerFooter = RESOURCES_PATH . '/views/' . $this->_controller . '/footer.php';
+        // 页头文件
+        if (file_exists($controllerHeader)) {
+            include ($controllerHeader);
+        } else {
+            include ($defaultHeader);
+        }
+        // 页内容文件
+        include (RESOURCES_PATH . '/views/' . $this->_controller . '/' . $this->_action . '.php');
+        // 页脚文件
+        if (file_exists($controllerFooter)) {
+            include ($controllerFooter);
+        } else {
+            include ($defaultFooter);
+        }
     }
 }

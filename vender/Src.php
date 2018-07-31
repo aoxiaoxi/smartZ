@@ -13,9 +13,11 @@ defined('ROOT_PATH') or define('ROOT_PATH',VENDER_PATH.'/../');
 
 defined('APP_PATH') or define('APP_PATH',ROOT_PATH.'application');
 
-defined('CONFIG_PATH') or define('APP_PATH',ROOT_PATH.'config');
+defined('CONFIG_PATH') or define('CONFIG_PATH',ROOT_PATH.'config');
 
-defined('RUNTIME_PATH') or define('APP_PATH',ROOT_PATH.'runtime');
+defined('RUNTIME_PATH') or define('RUNTIME_PATH',ROOT_PATH.'runtime');
+
+defined('RESOURCES_PATH') or define('RESOURCES_PATH',ROOT_PATH.'resources');
 
 //加载配置文件
 require CONFIG_PATH.'/config.php';

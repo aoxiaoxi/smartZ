@@ -44,4 +44,11 @@ class Core{
             ini_set('error_log', RUNTIME_PATH. 'logs/error.log');
         }
     }
+
+    public function route(){
+        if(!empty($_GET['url'])){
+            $url = $_GET['url'];
+            
+        }
+    }
 }
