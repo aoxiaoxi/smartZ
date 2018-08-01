@@ -8,6 +8,6 @@
 define("DB_CONNECTION","mysql");
 define("DB_HOST","localhost");
 define("DB_PORT","3306");
-define("DB_DATABASE","cece");
+define("DB_DATABASE","blog");
 define("DB_USERNAME","root");
-define("DB_PASSWORD","118315");
+define("DB_PASSWORD","");
