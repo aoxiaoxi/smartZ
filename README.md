@@ -1,4 +1,4 @@
-# smartZ-own framework
+# smartZ----own framework
 **1.简单的MVC框架**  
 **2.实现类的自动加载**  
 **3.路由htaccess 重定向**  
